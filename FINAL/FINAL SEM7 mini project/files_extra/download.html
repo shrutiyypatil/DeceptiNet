@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Download</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dwonload.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Download Your File</h1>
+        <p>Please enter the password to access the file:</p>
+        
+        <div class="file-info">
+            <label for="file-name">File Name:</label>
+            <input type="text" id="file-name" value="example-file.zip" readonly>
+        </div>
+        
+        <div class="password-input">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+        
+        <button id="download-btn">Download File</button>
+        
+        <div id="message" class="message"></div>
+        
+        <img src="{{ url_for('static', filename='download_page') }}" alt="Background Image" class="background-image">
+    </div>
+
+    <script src="{{ url_for('static', filename='download.js') }}"></script>
+</body>
+</html>

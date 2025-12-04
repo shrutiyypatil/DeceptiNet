@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Marketplace - Search</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">DATA MARKETPLACE</div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="search.html">SEARCH</a></li>
+            <li><a href="upload.html">UPLOAD</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="data.html">DATA</a></li>
+            <li><a href="archived.html">ARCHIVED</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <h2>Find the Data You Need</h2>
+        <p>Search for leaked credentials, full identity kits, financial details, and more.</p>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Enter name, email, phone, or address">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="loading" class="loading hidden"><p>Loading...</p></div>
+
+        <div id="download-section" class="hidden">
+            <p>Search completed! Click below to download:</p>
+            <a id="download-link" href="#" download="leaked-data.txt">Download File</a>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    <table id="data-table" class="data-table">
+        <thead>
+            <tr>
+                <th>DATATYPE</th>
+                <th>RELEASE DATE</th>
+                <!-- <th>CONTACT</th> -->
+                <!-- <th>LOCATION</th> -->
+                <th>DOWNLOAD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <!-- <td>+1 234 567 890</td> -->
+                <!-- <td>New York, USA</td> -->
+                <td><button class="download-btn" data-name="John Doe" data-email="johndoe@example.com">Download</button></td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Smith</td>
+                <!-- <td>+44 789 456 123</td> -->
+                <!-- <td>London, UK</td> -->
+                <td><button class="download-btn" data-name="Jane Smith" data-email="janesmith@example.com">Download</button></td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Brown</td>
+                <!-- <td>+61 400 123 456</td> -->
+                <!-- <td>Sydney, Australia</td> -->
+                <td><button class="download-btn" data-name="David Brown" data-email="davidbrown@example.com">Download</button></td>
+            </tr>
+            <tr>
+                <td>Emma</td>
+                <td>Wilson</td>
+                <!-- <td>+49 172 345 6789</td> -->
+                <!-- <td>Berlin, Germany</td> -->
+                <td><button class="download-btn" data-name="Emma Wilson" data-email="emmawilson@example.com">Download</button></td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>Clark</td>
+                <!-- <td>+81 90 1234 5678</td> -->
+                <!-- <td>Tokyo, Japan</td> -->
+                <td><button class="download-btn" data-name="Michael Clark" data-email="michaelclark@example.com">Download</button></td>
+            </tr>
+            <tr>
+                <td>Sophia</td>
+                <td>Miller</td>
+                <!-- <td>+33 6 12 34 56 78</td> -->
+                <!-- <td>Paris, France</td> -->
+                <td><button class="download-btn" data-name="Sophia Miller" data-email="sophiamiller@example.com">Download</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="search.js"></script>
+</body>
+</html>

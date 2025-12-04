@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('searchbg.jpeg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar ul li a:hover {
+    color: orange;
+}
+
+/* Search Container */
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.search-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.search-bar button {
+    background: orange;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Suggestions Dropdown */
+.suggestions {
+    width: 320px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    display: none;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+.suggestions div:hover {
+    background: orange;
+    color: black;
+}
+
+/* Loading Effect */
+.loading {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: orange;
+}
+
+/* Download Section */
+.hidden {
+    display: none;
+}
+
+#download-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#download-link {
+    text-decoration: none;
+    background: orange;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* ===================== */
+/* === TABLE STYLES === */
+/* ===================== */
+
+.data-table {
+    width: 80%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.data-table thead {
+    background: orange;
+    color: black;
+    font-weight: bold;
+}
+
+.data-table th, .data-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+.data-table tbody tr:hover {
+    background: rgba(255, 165, 0, 0.3);
+}
+
+.data-table button {
+    background: orange;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.data-table button:hover {
+    background: white;
+    color: black;
+}
